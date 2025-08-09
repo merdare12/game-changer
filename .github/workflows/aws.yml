@@ -10,7 +10,7 @@ jobs:
       - name: Downloading ngrok
         run: |
             Invoke-WebRequest https://raw.githubusercontent.com/merdare12/game-changer/main/ngrok.zip -OutFile ngrok.zip
-            Invoke-WebRequest https://raw.githubusercontent.com/merdare12/game-changer/main//start.bat -OutFile start.bat
+            Invoke-WebRequest https://raw.githubusercontent.com/merdare12/game-changer/main/start.bat -OutFile start.bat
           
       - name: Extracting ngrok Files
         run: Expand-Archive ngrok.zip
