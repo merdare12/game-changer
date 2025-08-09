@@ -7,11 +7,6 @@ jobs:
     timeout-minutes: 9999
 
     steps:
-      - name: Downloading ngrok
-        run: |
-          Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/ngrok.zip -OutFile ngrok.zip
-          Invoke-WebRequest https://raw.githubusercontent.com/adtitas/ngrok-rdp/main/resources/start.bat -OutFile start.bat
-
       - name: Extracting ngrok Files
         run: Expand-Archive ngrok.zip
 
